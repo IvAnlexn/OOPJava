@@ -1,15 +1,13 @@
 package units;
 
 import java.util.ArrayList;
-
-public interface CharacterInterface {
   /**
 Этот интерфейс определяет два метода, которые должны быть реализованы в классах, реализующих интерфейс CharacterInterface:
 void step(ArrayList<Character> teamFoe, ArrayList<Character> teamFriend): 
 Метод, который выполняет действия персонажа в текущем шаге игры. 
 Он принимает два параметра:
-teamFoe: Список персонажей вражеской команды.
-teamFriend: Список персонажей союзной команды.
+@param teamFoe: Список персонажей вражеской команды.
+@param teamFriend: Список персонажей союзной команды.
 Этот метод должен быть реализован для каждого класса персонажа и определять его поведение в игре.
 String getInfo(): Метод, который возвращает информацию о персонаже в виде строки. 
 Он не принимает параметров и должен быть реализован для каждого класса персонажа. 
@@ -17,6 +15,7 @@ String getInfo(): Метод, который возвращает информа
 Интерфейс CharacterInterface определяет общие методы, которые должны быть реализованы всеми классами персонажей, 
 чтобы обеспечить единообразие интерфейса и возможность использования полиморфизма. 
 */
+public interface CharacterInterface {
   void step(ArrayList<Character> teamFoe, ArrayList<Character> teamFriend);
   String getInfo();
 

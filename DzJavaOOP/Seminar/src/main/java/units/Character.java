@@ -3,8 +3,6 @@ package units;
 import map.Coordinates;
 
 import java.util.ArrayList;
-
-public abstract class Character implements CharacterInterface {
   /**
    В классе Character определены основные атрибуты и методы для персонажей. 
    Он является абстрактным классом, от которого наследуются конкретные классы персонажей, 
@@ -12,6 +10,7 @@ public abstract class Character implements CharacterInterface {
    каждой части кода, включая инициализацию атрибутов, методы для получения и изменения данных, 
    а также методы для работы с состоянием персонажа и взаимодействия с другими персонажами. 
    */
+  public abstract class Character implements CharacterInterface {
   protected Names name; // Имя персонажа
   protected int hp; // Текущее количество очков здоровья
   protected int maxHp; // Максимальное количество очков здоровья
